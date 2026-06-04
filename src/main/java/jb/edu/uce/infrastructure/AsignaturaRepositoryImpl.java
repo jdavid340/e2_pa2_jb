@@ -35,7 +35,7 @@ public class AsignaturaRepositoryImpl implements AsignaturaRepository{
     @Override
     public List<Asignatura> seleccionarNivel(Integer nivel) {
         TypedQuery<Asignatura> query=this.em.createQuery("SELECT a FROM Asignatura a WHERE a.nivel=:nivel", Asignatura.class);
-        query.setParameter(nivel, nivel);
+        query.setParameter("nivel", nivel);
 
         return query.getResultList();
     }

@@ -15,7 +15,7 @@ public class Main {
         Quarkus.run(App.class, args);
     }
 
-    public static class App implements QuarkusApplication{
+    public static class App implements QuarkusApplication {
 
         @Inject
         private AsignaturaService as;
@@ -26,8 +26,8 @@ public class Main {
         @Override
         public int run(String... args) throws Exception {
 
-            //Parte 1
-            Asignatura a1=new Asignatura();
+            // Parte 1
+            Asignatura a1 = new Asignatura();
 
             a1.setNivel(1);
             a1.setNombre("Progra Avanzada");
@@ -36,25 +36,24 @@ public class Main {
 
             as.crear(a1);
 
-           // as.seleccionarPorNivel(1).forEach(System.out::println);
-           // as.contienePalabra("Progra").forEach(System.out::println);
+            as.seleccionarPorNivel(1).forEach(System.out::println);
+            // as.contienePalabra("Progra").forEach(System.out::println);
 
-            System.out.println("Asignaturas totales: "+as.numeroAsignaturas());
+            // System.out.println("Asignaturas totales: "+as.numeroAsignaturas());
 
-            //Parte 2
-          /*   Estudiante e1=new Estudiante();
+            // Parte 2
+            /*
+             * Estudiante e1=new Estudiante();
+             * 
+             * e1.setNombre("Juan");
+             * e1.setApellido("Cruz");
+             * e1.setCarrera("Computacion");
+             * System.out.println("Guardando");
+             * es.crear(e1);
+             */
+            return 0;
 
-            e1.setNombre("Juan");
-            e1.setApellido("Cruz");
-            e1.setCarrera("Computacion");
-            System.out.println("Guardando");
-            es.crear(e1);*/
-           return 0;
-
-           
-            
         }
-
 
     }
 }
