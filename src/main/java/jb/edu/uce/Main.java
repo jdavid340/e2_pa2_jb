@@ -8,6 +8,7 @@ import jakarta.inject.Inject;
 import jb.edu.uce.application.AsignaturaService;
 import jb.edu.uce.application.EstudianteService;
 import jb.edu.uce.domain.model.Asignatura;
+import jb.edu.uce.domain.model.Estudiante;
 
 public class Main {
 
@@ -36,21 +37,21 @@ public class Main {
 
             as.crear(a1);
 
-            as.seleccionarPorNivel(1).forEach(System.out::println);
+           // as.seleccionarPorNivel(1).forEach(System.out::println);
             // as.contienePalabra("Progra").forEach(System.out::println);
 
             // System.out.println("Asignaturas totales: "+as.numeroAsignaturas());
 
             // Parte 2
-            /*
-             * Estudiante e1=new Estudiante();
-             * 
-             * e1.setNombre("Juan");
-             * e1.setApellido("Cruz");
-             * e1.setCarrera("Computacion");
-             * System.out.println("Guardando");
-             * es.crear(e1);
-             */
+            
+              Estudiante e1=new Estudiante();
+              
+              e1.setNombre("Juan");
+              e1.setApellido("Cruz");
+              e1.setCarrera("Computacion");
+              System.out.println("Guardando");
+              es.crear(e1);
+             
             return 0;
 
         }

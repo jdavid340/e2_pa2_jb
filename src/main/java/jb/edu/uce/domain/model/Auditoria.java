@@ -20,7 +20,7 @@ public class Auditoria {
 
     private String nombreMetodo;
 
-    private Object[] argumentos;
+    private String argumentos;
 
     private LocalDate fechaHoraEjecucion;
 
@@ -54,13 +54,7 @@ public class Auditoria {
 
     
 
-    public Object[] getArgumentos() {
-        return argumentos;
-    }
-
-    public void setArgumentos(Object[] argumentos) {
-        this.argumentos = argumentos;
-    }
+    
 
     public Long getTiempoEjecucion() {
         return tiempoEjecucion;
@@ -68,6 +62,14 @@ public class Auditoria {
 
     public void setTiempoEjecucion(Long tiempoEjecucion) {
         this.tiempoEjecucion = tiempoEjecucion;
+    }
+
+    public String getArgumentos() {
+        return argumentos;
+    }
+
+    public void setArgumentos(String argumentos) {
+        this.argumentos = argumentos;
     }
 
     

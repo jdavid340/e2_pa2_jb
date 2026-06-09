@@ -59,5 +59,18 @@ public class Estudiante {
         this.apellido = apellido;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Estudiante{");
+        sb.append(", nombre=").append(nombre);
+        sb.append(", apellido=").append(apellido);
+        sb.append(", carrera=").append(carrera);
+        sb.append('}');
+        return sb.toString();
+    }
+
+    
+
     
 }
