@@ -44,13 +44,14 @@ public class Main {
 
             // Parte 2
             
-              Estudiante e1=new Estudiante();
-              
-              e1.setNombre("Juan");
-              e1.setApellido("Cruz");
-              e1.setCarrera("Computacion");
-              System.out.println("Guardando");
-              es.crear(e1);
+             Estudiante e1=new Estudiante();
+             
+             e1.setNombre("Juan");
+             e1.setApellido("Cruz");
+             e1.setCarrera("Computacion");
+             System.out.println("Guardando");
+            // es.crear(e1);
+
              
             return 0;
 

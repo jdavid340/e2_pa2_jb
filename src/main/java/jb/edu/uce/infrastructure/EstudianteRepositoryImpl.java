@@ -21,13 +21,13 @@ public class EstudianteRepositoryImpl implements EstudianteRepository{
         em.persist(est);
     }
 
-    //@AuditoriaAnotacion
+    @AuditoriaAnotacion
     @Override
     public void actualizar(Estudiante est) {
         em.merge(est);
     }
 
-    //@AuditoriaAnotacion
+    @AuditoriaAnotacion
     @Override
     public void eliminar(Estudiante est) {
        em.remove(est);
