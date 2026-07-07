@@ -1,6 +1,6 @@
 package jb.edu.uce.domain.model;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -22,7 +22,7 @@ public class Auditoria {
 
     private String argumentos;
 
-    private LocalDate fechaHoraEjecucion;
+    private LocalDateTime fechaHoraEjecucion;
 
     private Long tiempoEjecucion;
 
@@ -42,17 +42,6 @@ public class Auditoria {
         this.nombreMetodo = nombreMetodo;
     }
 
-    
-
-    public LocalDate getFechaHoraEjecucion() {
-        return fechaHoraEjecucion;
-    }
-
-    public void setFechaHoraEjecucion(LocalDate fechaHoraEjecucion) {
-        this.fechaHoraEjecucion = fechaHoraEjecucion;
-    }
-
-    
 
     
 
@@ -70,6 +59,14 @@ public class Auditoria {
 
     public void setArgumentos(String argumentos) {
         this.argumentos = argumentos;
+    }
+
+    public LocalDateTime getFechaHoraEjecucion() {
+        return fechaHoraEjecucion;
+    }
+
+    public void setFechaHoraEjecucion(LocalDateTime fechaHoraEjecucion) {
+        this.fechaHoraEjecucion = fechaHoraEjecucion;
     }
 
     

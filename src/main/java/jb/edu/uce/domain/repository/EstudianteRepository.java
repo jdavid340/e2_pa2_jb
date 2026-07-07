@@ -6,7 +6,9 @@ public interface  EstudianteRepository {
 
     void crear(Estudiante est);
 
-    void actualizar(Estudiante est);
+    void actualizar(Integer id,Estudiante est);
 
-    void eliminar(Estudiante est);
+    void eliminar(Integer id);
+
+    Estudiante buscarPorId(Integer id);
 }

@@ -18,12 +18,12 @@ public class EstudianteService {
     }
 
 
-    public void actualizar(Estudiante estudiante){
-        this.er.actualizar(estudiante);
+    public void actualizar(Integer id,Estudiante estudiante){
+        this.er.actualizar(id,estudiante);
     }
 
 
-    public void eliminar(Estudiante estudiante){
-        this.er.eliminar(estudiante);
+    public void eliminar(Integer id){
+        this.er.eliminar(id);
     }
 }

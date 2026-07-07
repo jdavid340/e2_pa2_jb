@@ -15,7 +15,7 @@ public class Estudiante {
     @Id
     @GeneratedValue(strategy=GenerationType.SEQUENCE,generator="seq_estudiante")
     @SequenceGenerator(name="seq_estudiante", allocationSize=1, sequenceName="seq_estudiante")
-    private Long id;
+    private Integer id;
 
 
     @Column(name="estu_nombre")
@@ -27,13 +27,6 @@ public class Estudiante {
     @Column(name="estu_carrera")
     private String carrera;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getNombre() {
         return nombre;
@@ -68,6 +61,14 @@ public class Estudiante {
         sb.append(", carrera=").append(carrera);
         sb.append('}');
         return sb.toString();
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     
